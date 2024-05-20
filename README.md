@@ -20,7 +20,7 @@ It was very fun to build and I could put a lot of concepts in practice. Hope you
 - Ready to Run by pressing F5 ✅
 
 ⭐ I've improved the project setup by updating the .NET projects, improving the architecture and implementing more fuctionalities
-such as generic API consuming, global exception handling, remove favorite feature, etc. I also reworked the UI, made it responsive and implemented all the front-end 
+such as generic API consuming, global exception handling, "remove favorite" feature, etc. I also reworked the UI, made it responsive and implemented all the front-end 
 components by myself using Html, Css and Ts. I've considered to use Angular Material in the details modal but in the end I've prefered to implement it by myself to show
 my Front-End skills.
 
