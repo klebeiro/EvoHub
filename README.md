@@ -64,7 +64,7 @@ Angular CLI
 - Components: reusable portions of the page
 - Models: classes that are used to load the API data
 - Services: provide methods to consume the API endpoints
-- Pages: component composition mapped by routes and effectively used by the client
+- Pages: component composition mapped by routes and used by the client
 
 ## API endpoints
 - GET / POST / DELETE: /favorites
