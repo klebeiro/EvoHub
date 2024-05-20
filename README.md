@@ -45,6 +45,7 @@ Angular CLI
 ## Getting Started
 1. Clone the repository
 > git clone https://github.com/your-username/github-api-integration.git
+
 > cd github-api-integration
 2. Open the solutions file on Visual Studio and select the EvoHub.SPA project as the Startup Project
 3. Press the run button and wait a few seconds to the application start
