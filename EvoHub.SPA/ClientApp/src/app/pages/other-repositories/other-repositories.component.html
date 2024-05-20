@@ -1,0 +1,14 @@
+<header class="header">
+  <h1 id="tableLabel">Outros repositórios</h1>
+  <p>Não achou o que procurava? Tente aqui! <i class="bi bi-arrow-down"></i></p>
+</header>
+
+<div class="search">
+  <div class="search-bar">
+    <input (keydown.enter)="search()" [(ngModel)]="queryString" />
+    <button (click)="search()"><i class="bi bi-search"></i></button>
+  </div>
+  <p *ngIf="isInputValid==false">Insira uma nome válido</p>
+</div>
+
+<app-repository-list [repositories]="repositories" [isLoading]="isLoading" [hasLoaded]="hasLoaded"></app-repository-list>

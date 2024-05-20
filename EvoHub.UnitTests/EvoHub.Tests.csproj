@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+    <PackageReference Include="Moq" Version="4.20.70" />
+    <PackageReference Include="OpenCover" Version="4.7.1221" />
+    <PackageReference Include="ReportGenerator" Version="5.3.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="3.1.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+	  <PackageReference Include="ReportGenerator" Version="5.3.0" />
+	  <PackageReference Include="xunit" Version="2.5.3" />
+	  <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+	  </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EvoHub.Business\EvoHub.Business.csproj" />
+    <ProjectReference Include="..\EvoHub.Business\EvoHub.Business.csproj" />
+    <ProjectReference Include="..\EvoHub.Domain\EvoHub.Domain.csproj" />
+    <ProjectReference Include="..\EvoHub.Infra.CrossCutting\EvoHub.Infra.CrossCutting.csproj" />
+    <ProjectReference Include="..\EvoHub.Infra\EvoHub.Infra.csproj" />
+    <ProjectReference Include="..\EvoHub.SPA\EvoHub.oldspa.csproj" />
+  </ItemGroup>
+
+</Project>

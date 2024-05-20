@@ -1,0 +1,8 @@
+<header class="header">
+  <h1 id="tableLabel">Meus repositórios</h1>
+  <p>Listagem dos repositórios do <a href="https://www.linkedin.com/in/klenissonribeiro/" target="_blank">seu novo desenvolvedor</a>! 💜</p>
+  <button (click)="toggleShowFavorites()" *ngIf="showFavorites == false">Mostrar favoritos</button>
+  <button (click)="toggleShowFavorites()" *ngIf="showFavorites == true">Mostrar tudo</button>
+</header>
+
+<app-repository-list [repositories]="repositories" [favorites]="favorites" [isLoading]="isLoadingRepositories" [hasLoaded]="true" [showFavorites]="showFavorites"></app-repository-list>

@@ -1,0 +1,199 @@
+.repos-container {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.repo-box {
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 16px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  min-height: 250px; 
+  max-height: 300px; 
+  overflow: hidden; 
+}
+
+  .repo-box h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    word-wrap: break-word;
+  }
+
+  .repo-box p {
+    margin-bottom: 8px;
+    word-wrap: break-word; 
+  }
+
+.general-information {
+  flex: 1;
+}
+
+.language {
+  text-align: end;
+  flex-shrink: 0;
+}
+
+.list-empty {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-empty p {
+  text-align: center;
+}
+
+  .list-empty i {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  height: 4px;
+  width: 130px;
+  --c: no-repeat linear-gradient(#6100ee 0 0);
+  background: var(--c),var(--c),#d7b8fc;
+  background-size: 60% 100%;
+  animation: l16 3s infinite;
+  justify-content: center;
+  align-items: center;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+}
+
+.details-container {
+  width: 34rem;
+  min-width: 16rem;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 16px;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  opacity: 0;
+  animation: fadeIn 0.2s ease forwards; 
+}
+
+
+.details-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+  .details-header h3 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .details-header button {
+    position: absolute;
+    left: 0;
+    font-size: 32px;
+    border: none;
+    background: none;
+  }
+
+.details-content {
+    margin: 0 2rem;
+}
+
+.details-content p:first-child {
+    text-align: center;
+}
+
+.details-button {
+  padding: 5px 20px;
+  background: #8061ff;
+  border-radius: 60px;
+  color: white;
+  border: none;
+  text-decoration: none;
+  margin: 1rem;
+  text-align: center;
+}
+
+  .details-button:hover {
+    background-color: #8030ff;
+  }
+
+.details-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  content: " ";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+  z-index: 9998;
+  animation: fadeInOpacity 0.2s ease forwards;
+}
+
+@media (max-width: 1024px) {
+  .repos-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .repos-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes fadeInOpacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
