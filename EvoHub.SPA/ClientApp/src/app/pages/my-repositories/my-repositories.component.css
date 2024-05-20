@@ -49,6 +49,12 @@
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 26px;
+  }
+}
+
 @keyframes l16 {
   0% {
     background-position: -150% 0,-150% 0
