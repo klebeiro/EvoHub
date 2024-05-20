@@ -68,9 +68,9 @@ Angular CLI
 
 ## API endpoints
 - GET / POST / DELETE: /favorites
-- GET: githubapi/repositories
-- GET: githubapi/owner-repository-by-id?owner={ownerLogin}&id={repositoryId}
-- GET: githubapi/repositories-by-name?name={repositoryName}
+- GET: /githubapi/repositories
+- GET: /githubapi/owner-repository-by-id?owner={ownerLogin}&id={repositoryId}
+- GET: /githubapi/repositories-by-name?name={repositoryName}
 
  
 ## Improvements
