@@ -23,6 +23,7 @@ It was very fun to build and I could put a lot of concepts in practice. Hope you
 such as generic API consuming, global exception handling, remove favorite feature, etc. I also reworked the UI, made it responsive and implemented all the front-end 
 components by myself using Html, Css and Ts. I've considered to use Angular Material in the details modal but in the end I've prefered to implement it by myself to show
 my Front-End skills.
+
 ⭐ I've decided to build the front-end with Angular because in the Technical Interview was told that in the ABC Evo was the mainly used front-end
 technology. 
 
