@@ -37,7 +37,9 @@ technology.
 
 ## Prerequisites
 .NET SDK (latest version recommended)
+
 Node.js and npm
+
 Angular CLI
 
 ## Getting Started
