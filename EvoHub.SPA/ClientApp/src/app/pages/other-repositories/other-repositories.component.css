@@ -52,12 +52,6 @@
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .header h1 {
-    font-size: 28px;
-  }
-}
-
 
 @keyframes l16 {
   0% {
@@ -77,5 +71,9 @@
 @media (max-width: 768px) {
   .search-bar input {
     width: 256px;
+  }
+
+  .header h1 {
+    font-size: 28px;
   }
 }
