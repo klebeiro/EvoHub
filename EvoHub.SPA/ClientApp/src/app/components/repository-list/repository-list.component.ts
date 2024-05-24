@@ -31,11 +31,7 @@ export class RepositoryListComponent {
       if (updatedFavorites.id == id) {
         let favoritedRepo = this.repositories.find(r => r.id == id)
 
-        if (favoritedRepo == undefined) {
-          favoritedRepo = this.favorites.find(r => r.id == id)
-        }
-
-        if (favoritedRepo != null) {
+        if (favoritedRepo != undefined) {
           this.favorites.push(favoritedRepo);
         }
       }
