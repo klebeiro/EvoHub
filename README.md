@@ -67,7 +67,7 @@ Angular CLI
 - Pages: component composition mapped by routes and used by the client
 
 ## API endpoints
-- GET / POST / DELETE: /favorites
+- GET | POST | DELETE: /favorites
 - GET: /githubapi/repositories
 - GET: /githubapi/owner-repository-by-id?owner={ownerLogin}&id={repositoryId}
 - GET: /githubapi/repositories-by-name?name={repositoryName}
